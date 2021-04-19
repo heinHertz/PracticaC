@@ -7,21 +7,17 @@ int main(void) {
 
 	char *t;
 
-	t = "adolfito fadf";
+	t = "soy un string";
 
 	printf("t :%s   tamanio %d \n ",t , strlen(t) );
 
 	//NO HACE FALTA FREE PORQEU EL SISTEMA YA LO ASIGNA
-	// VALGRIND NO ENCUETRA PROBLEMAS, FUNCIONA.
-	t = "miriampol";
+	// VALGRIND NO ENCUETRA PROBLEMAS, FUNCIONA. no hace falta malloc ni realloc
+	t = "reasigno string";
 
 	printf("t :%s   tamanio %d \n ", t ,strlen(t) );
 
-int i;
-	for(i=0;i<10;i++){
-	printf("!!!    Hello World!!! \n"); /* prints !!!Hello World!!! */
 
-	}
 
 	return EXIT_SUCCESS;
 }
